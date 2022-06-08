@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+           margin: 0;
+           padding: 0;
+
+       }
+    .header{
+        background-color:#333333;
+        width: 100%;
+        height: 50px;
+        margin: 20px 0 0;
+        padding-left: 20px;
+       }
+       .options .Home,.options .News,.options .products{
+           float: left;
+           list-style-type: none;
+       }
+       .options .Home a,.options .News a,.options .products a{
+           text-decoration: none;
+           padding: 10px 20px;
+           text-align: center;
+           height: 30px;
+
+           display: block;
+           color: aliceblue;
+       }
+       .header ul li a:hover{
+           background-color: #FF0000;
+       }
+       .header ul li:hover > .none{
+           display: block;
+           background-color: #333333;
+
+
+       }
+       .none{
+           display: none;
+           
+           /* box-shadow: #333333; */
+           width: auto;
+           height: auto;
+           list-style-type: none;
+
+
+       }
+       .none li a{
+        background-color: #333333;
+       }
+       
+    </style>
+</head>
+<body>
+    <div class="header">
+    <ul class="options">
+        <li class="Home"><a href="#">Home</a></li>
+        <li class="News"><a href="#">News</a></li>
+        <li class="products"><a href="#">Products</a>
+           <ul class="none">
+                
+                <li><a href="#">Iphone</a></li>
+                <li><a href="#">Ipad</a></li>
+                <li><a href="#">Macbook</a></li>
+            
+            </ul>
+           
+        </li>
+      
+        
+    </ul>
+    </div>
+    </ul>
+</div>
+</body>
+</html>

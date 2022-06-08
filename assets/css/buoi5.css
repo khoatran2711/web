@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+table{
+    width: 800px;
+    margin: 10px 20px;
+}
+table, tr, th, td{
+    border: 1px solid #F1F1F1 ;
+    border-collapse: collapse;
+}
+td{
+    height: 25px;
+    text-align: left;
+    text-decoration-style: solid;
+    padding-left: 10px;
+}
+.title{
+    background-color: #4CAF50;
+    color:aliceblue;
+    height: 40px;
+    text-align: left;
+    
+    
+}
+th{
+    padding-left: 10px;
+}
+.company{
+    width: 40%
+}
+.country{
+    width: 30%;
+
+}
+.contact{
+    width:30%;
+}
+.color{
+    background-color: #e8e8e8;
+}

@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+table{
+    background-color: #F2F2F2;
+    padding: 20px 10px;
+    width: 700px;
+    height: auto;
+    margin: 20px auto;
+    
+}
+tr{
+    height: 50px;
+   
+ }
+ 
+ 
+ table input[type=text],input[type=email],table select{
+     width: 95%;
+     height: 30px;
+     padding: 2px 5px;
+
+ }
+ table input[type=string]{
+    width: 95%;
+    height: 100px;
+    padding: 2px 5px;
+    
+ }
+ /* table select{
+    width: 95%;
+    height: 30px;
+ } */
+/* 
+table,tr,td{border: 1px solid black;
+} */
+label{
+    text-align: left;
+}
+table button{
+    height: 40px;
+    width: 80px;
+    color: #F2F2F2;
+    border: 0px;
+    border-radius: 3px;
+    
+}
+table .button{
+    margin-right: 20px;
+    float: right;
+}
+table .button .red{
+    background-color:red ;
+}
+table .button .green{
+    background-color: green;
+}

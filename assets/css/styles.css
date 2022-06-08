@@ -1,0 +1,217 @@
+/* @font-face {
+    font-family: 'spotify-circular';
+    src: url('../fonts/CircularSpUIv3T-Black.woff2') format('woff2'), url('../fonts/CircularSpUIv3T-Book.woff') format('woff'), url('../fonts/CircularSpUIv3T-Book.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica', serif;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+.container{
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+header {
+    background-color: rgb(0, 0, 0);
+    height: 80px;
+    margin: 0;
+    padding: auto;
+    position: sticky;
+}
+
+nav.menu{
+    float: right;
+}
+
+
+
+
+div.brand {
+    padding: 20px;
+    width: 132px;
+    height: 60px;
+    float: left;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.menu ul li{
+    float: left;
+}
+
+.menu li a,li span {
+    font-family: 'spotify-circular', sans-serif;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.menu li a:hover {
+    color: #1ED760;
+    
+}
+
+.section {
+    margin: 0;
+    padding: 0;
+    background-color: #2941AB;
+    background-image: url(https://www-growth.scdn.co/static/home/bursts.svg);
+    background-size: 175%;
+    background-position: 46% 4%;
+    padding: 10% 0;
+
+}
+
+.content h1 {
+    color: #1ED760;
+    font-size: 156px;
+    text-align: center;
+    letter-spacing: -0.04em !important;
+    line-height: 160px;
+    padding-bottom: 40px;
+}
+
+.content .description {
+    font-size: 18px;
+    color: #1ED760;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.content{
+    max-width: 1050px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn-download {
+    background-color: #1ED760;
+    color: #2941AB;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 32px;
+    text-transform: uppercase;
+    border-radius: 32px;
+    font-weight: 600;
+    transition: all .2s;
+    display: inline-block;
+}
+.btn-download:hover{
+    transform: scale(1.04);
+}
+
+footer {
+    height: 400px;
+    background-color: black;
+    padding: 80px 0 50px;
+}
+
+nav.decr {
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    margin: 0 126.5px 0;
+}
+
+.logo {
+    padding: 0 15px 0;
+}
+
+.decr div.logo,.decr div.comp,.decr div.social.decr div.links{
+    width: 195px;
+    height: 346px;
+    padding: 3px 0 15px;
+    margin: 0;
+    
+}
+
+
+div.sociable {
+    margin: 0 15px 0 auto;
+   
+}
+.nation  {
+    width: 1140px;
+    height: 15px;
+    margin: 0 15px;
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    color: #919496;
+
+}
+.nation a{
+    color: #919496;
+}
+.footer ul li a{
+    padding-bottom: 20px;
+    display: inline-block;
+    
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: none;
+    color:white;
+    padding: 3px 0 15px;
+    text-align: left;
+    
+}
+
+
+.footer a:hover {
+    color: #1ED760;
+}
+.footer ul{
+    margin-left: 20px;
+}
+.footer h3{
+    color: #919496;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    margin: 20px;
+}
+.bottom-footer{
+    width: 100%;
+    color:#919482;
+    padding: 15px 0;
+}
+
+.bottom-footer .fleft{
+    float: left;
+
+}
+.bottom-footer li{
+
+list-style-type: none;
+
+display: inline-block;
+margin-right: 24px;
+}
+.bottom-footer .fright{
+    float: right;
+    text-decoration: none;
+}
