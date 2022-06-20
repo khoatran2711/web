@@ -7,35 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .container{
+            background-color: gray;
+            padding: 20px ;
+            width: 50%;
+        }
         .header{
             text-align: center;
         }
        .container .change{
-           margin: 20px auto;
+           margin: 20px 75px;
+           display: flex;
        }
+       .container .change div {
+           margin: 0 20px;
+       }
+       
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="header"><h1>Bảng chuyển đổi đơn vị</h1>
-            <h2>Thơm ngon mời bạn nhập nha, tôi đây ko chờ bạn nữa tôi chạy chương trình</h2></div>
+        <div class="header"><h3>Đổi đơn vị </h3></div>
         
         <div class="change">
-            <label>Độ F: <input id="input" type="text" value="20" placeholder="độ F"></label>
-            <label>Độ C: </label><input id="output" value=""> 
+            <div><label>Độ F:</label> <input id="input" type="text" onkeypress="changeF()"> <span>℉</span></div>
+            <div><label>Độ C: </label><input id="output" onkeypress="changeC()" > <span>°C</span> </div>
+            
+            
 
         </div>
-        <div>
-            <button onclick="change()">đổi</button>
-        </div>
+     
     </div>
     <script>
 
-        function change() {
+        function changeF() {
             var index = document.getElementById("input").value;
-             document.getElementById("output").value = (index-32)/1.8 ;
+            document.getElementById("output").value = (index-32)/1.8 ;
             
+        }
+        function changeC(){
+            var c = document.querySelector("#output").value;
+            document.querySelector("#input").value = 1.8 * c + 32;
         }
         
     </script>

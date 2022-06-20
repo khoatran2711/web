@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+<input id="input" type="email" value="">
+<button onclick="protect()">click</button>
+
+<p id="demo"></p>
+
+<script>
+function protect() {
+  let text = document.getElementById("input").value;
+  let change = ''
+  for(var i = 0; i < text.length;i++){
+    if(i > 2 && i < text.indexOf('@')){
+        change += '*';
+    }else{
+        change += text[i];
+    }
+  } 
+  document.querySelector('p').innerHTML = change;
+}
+</script>
+
+</body>
+</html>

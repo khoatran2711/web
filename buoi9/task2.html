@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="input">
+            <label>Nhập số</label> <input id="input" name="number" type="text" value="" >
+        </div>
+        <div class="onptions">
+            <button type="button" onclick="check()">check</button>
+        </div>
+        <div class="result">
+            <p id="result"></p>
+        </div>
+
+    </div>
+    <script>
+        function check() {
+            let num = document.querySelector("#input").value;
+            let result = document.querySelector("#result").innerHTML;
+            let check = true;
+            if (num < 2) {
+                check = false;
+            } 
+            else {
+                for (var i = 2; i < num; i++) {
+                    if (num % i == 0) {
+                        check = false;
+                        break;
+
+                    }
+                }
+            }
+            if(check == false){
+                document.querySelector("#result").innerHTML = num + " không phải là số nguyên tố";
+            } else{
+                document.querySelector("#result").innerHTML = num + " là số nguyên tố";
+            }
+
+        }
+    </script>
+</body>
+
+</html>

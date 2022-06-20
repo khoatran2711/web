@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .options{
+            margin: 331px 581px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="options">
+        <button type="button" id="spring" onclick="spring()">spring</button>
+        <button type="button" id="summer" onclick="summer()">summer</button>
+        <button type="button" id="autumn" onclick="autumn()">autumn</button>
+        <button type="button" id="winter" onclick="winter()">winter</button>
+
+    </div>
+    <script>
+        function spring(){
+            document.body.style.backgroundImage = "url('./assets/images/spring.jpg')"
+            document.body.style.backgroundSize= '100%'
+            
+        }
+        function summer(){
+            document.body.style.backgroundImage = "url('./assets/images/summer1.jpg')"
+            document.body.style.backgroundSize= '100%'
+        }
+        function autumn(){
+            document.body.style.backgroundImage = "url('./assets/images/autumn.jpg')"
+            document.body.style.backgroundSize= '100%'
+        }
+        function winter(){
+            document.body.style.backgroundImage = "url('./assets/images/winter.jpg')"
+            document.body.style.backgroundSize= '100%'
+        }
+       
+    </script>
+</body>
+</html>

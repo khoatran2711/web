@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td {
+            border: black 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input name="txtName">
+        <table id="tblist">
+            <thead>
+                <tr>
+                    <th>Ho va ten</th>
+                </tr>
+            </thead>
+            <tbody>
+          
+            </tbody>
+        </table>
+    </div>
+    <script>
+        // tạo biến inputTxtName để xác định Dom
+        var inputTxtName = document.querySelector('[name="txtName"]');
+       // bắt sự kiện
+        inputTxtName.addEventListener("keypress", function () {
+            // sự kiện enter 
+            if (event.key === "Enter") {
+                //lấy value từ thẻ input
+                let name = inputTxtName.value;
+                //khởi tạo biến tbody select vào thẻ tbody
+                let tbody = document.querySelector("#tblist tbody");
+                //khởi tạo biến tr = tạo thẻ tr
+                let tr = document.createElement('tr');
+                // let trDom = '<tr></tr>';
+                //tạo biến td = tạo thẻ td với child giá trị name
+                td = '<td>' + name + '</td>';
+                //bên trong tr gán td vào
+                tr.innerHTML = td;
+                // thêm node con cho tbody với giá trị tr
+                tbody.appendChild(tr);
+                inputTxtName.value = '';
+
+            
+            }
+        });
+
+
+    </script>
+</body>
+
+</html>

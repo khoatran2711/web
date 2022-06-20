@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quản lý nhân viên nào bro</title>
+</head>
+
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <th>Employees</th>
+            </tr>
+            <tr>
+
+                <td><label>Employee Id</label></td>
+                <td><input id='E_id' type='text' value=''></td>
+            </tr>
+            <tr>
+
+                <td><label>First Name</label></td>
+                <td><input id='E_fName' type='text' value=''></td>
+            </tr>
+            <tr>
+
+                <td><label>Last Name</label></td>
+                <td><input id='E_lName' type='text' value=''></td>
+            </tr>
+            <tr>
+
+                <td><label>sercurity Number</label></td>
+                <td><input id='E_sNum' type='text' value=''></td>
+            </tr>
+            <tr>
+
+                <td><label>salary</label></td>
+                <td><input id='E_salary' type='text' value=''></td>
+            </tr>
+            <tr>
+
+                <td><button type="button" onclick="addE()">add</button>
+                    <button type="reset">reset</button>
+                </td>
+
+            </tr>
+
+        </table>
+    </form>
+    <table id='result'>
+        <tr>
+            <th>Employee Id</th>
+            <th>Employee name</th>
+            <th>sercurity Number</th>
+            <th>salary</th>
+        </tr>
+
+    </table>
+    <script>
+
+        function addE() {
+            var eId = document.querySelector('#E_id').value;
+            var firstName = document.querySelector('#E_fName').value;
+            var lastName = document.querySelector('#E_lName').value;
+            var sNumber = document.querySelector('#E_sNum').value;
+            var salary = document.querySelector('#E_salary').value;
+            var table = document.querySelector('#result')
+            var trTag = document.createElement('tr');
+            var tdTag = '<td>' + eId + '</td>' + '<td>' + firstName + ' ' + lastName + '</td>' + '<td>' + sNumber + '</td>' + '<td>' + salary + '</td>';
+            trTag.innerHTML = tdTag;
+            table.appendChild(trTag);
+            document.querySelector('#E_id').value = '';
+            document.querySelector('#E_fName').value = ' ';
+            document.querySelector('#E_lName').value = ' ';
+            document.querySelector('#E_sNum').value = ' ';
+            document.querySelector('#E_salary').value = ' ';
+
+        }
+    </script>
+</body>
+
+</html>

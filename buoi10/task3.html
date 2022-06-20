@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            max-width: 500px;
+            display: flex;
+            
+        }
+        .container div{
+            width: auto;
+            min-width: 100px;
+            padding: 0 20px;
+            background-color: aquamarine;
+            text-align: center;
+            margin: 0 20px;
+           
+        }
+        a{
+            text-decoration: none;
+            display: block;
+        }
+      
+        li{
+            list-style: none;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="bang2">
+       <a href="#" class="bang2Name"> </a>
+      </div>
+       <div class="bang3">
+       <a href="#" class="bang3Name"> </a>
+      </div>
+       <div class="bang4">
+       <a href="#" class="bang4Name"> </a>
+      </div>
+       <div class="bang5">
+       <a href="#" class="bang5Name"> </a>
+      </div>
+       <div class="bang6">
+       <a href="#" class="bang6Name"> </a>
+      </div>
+       <div class="bang7">
+       <a href="#" class="bang7Name"> </a>
+      </div>
+       <div class="bang8">
+       <a href="#" class="bang8Name"> </a>
+      </div>
+       <div class="bang9">
+       <a href="#" class="bang9Name"> </a>
+      </div>
+       
+       
+
+
+    </div>
+
+
+    <script>
+        var cla = '.bang'
+        name = 'Name';
+        for(var i = 2; i<10;i++){
+            document.querySelector(cla + i + name).innerHTML = 'bảng ' + i;
+        }
+        for(var i = 2; i<=10;i++){
+            document.querySelector('a').addEventListener('click',show(i,cla+i)); // 
+        }   
+      function show(input,cl){
+        var elements = document.querySelector(cl);
+        var creatUl = document.createElement('ul');
+        var test =[];
+        for(var i=0; i<=9;i++){
+            if(input == i){
+                for(j = 0;j <=10;j++){
+                    var result = i.toString() + ' x ' + j.toString() + ' = ' + i*j;
+                   test.push(result);                 
+                }
+            }
+        }
+        for(const e of test){
+            creatUl.innerHTML += '<li>'+e+'</li>'
+        }
+        elements.appendChild(creatUl);
+      }
+    </script>
+</body>
+</html>

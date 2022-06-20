@@ -10,54 +10,54 @@
 </head>
 
 <body>
-    <table>
-        <div>
+    <form method="post">
+        <table>
+                <td class="title"><label>Full Name</label> </td>
+                <td><input name="fullname" class="tx fullname" value="" type="text" placeholder="Your full name.."></td>
+                </tr>
+                <tr>
+                    <td class="title"><label>Email</label> </td>
+                    <td><input name="email" class="tx fullname cc" type="email" placeholder="Your email.."></td>
+                </tr>
+                <tr>
+                    <td class="title"><label>Phone</label> </td>
+                    <td><input name="phone" class="tx" type="text" placeholder="Your phone.."></td>
+                </tr>
+                <tr>
+                    <td class="title"><label>Gender</label> </td>
+                    <td><input type="radio" name="gender" id="male"><label for="male"> Male </label>
+                        <input type="radio" name="gender" id="female"><lable for="female"> Female</lable>
+                        <input type="radio" name="gender" id="other"><lable for="other"> Other</lable>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="title"><label>Country</label> </td>
+                    <td><select name="lang">
+                            <option value="VietNam">VietNam</option>
+                            <option value="eng">English</option>
+                        </select></td>
+                </tr>
 
-            <td class="title"><label>Full Name</label> </td>
-            <td><input class="tx" type="text" placeholder="Your full name.."></td>
-            </tr>
-            <tr>
-                <td class="title"><label>email</label> </td>
-                <td><input class="tx" type="email" placeholder="Your email.."></td>
-            </tr>
-            <tr>
-                <td class="title"><label>Phone</label> </td>
-                <td><input class="tx" type="text" placeholder="Your phone.."></td>
-            </tr>
-            <tr>
-                <td class="title"><label>gender</label> </td>
-                <td><label><input type="radio"> Male </label>
-                    <lable><input type="radio"> Female</lable>
-                    <lable><input type="radio"> Other</lable>
-                </td>
-            </tr>
-            <tr>
-                <td class="title"><label>country</label> </td>
-                <td><select>
-                        <option value="VietNam">VietNam</option>
-                        <option value="eng">English</option>
-                    </select></td>
-            </tr>
+                <tr>
+                    <td class="title"><label>Comments</label> </td>
+                    <td>
+                        <textarea rows="4"  name="comments" class="comments" placeholder="Write something..."></textarea>
+                    </td>
+                </tr>
 
-            <tr>
-                <td class="title"><label>comments</label> </td>
-                <td><input class="comments" type="string" placeholder="Write something"></td>
-            </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="button">
+                            <button class="red" type="submit">submit</button>
+                            <button class="green" type="reset">reset</button>
+                        </div>
 
-            <tr>
-                <td class="title"></td>
-                <td>
-                    <div class="button">
-                        <button class="red" href="#">submit</button>
-                        <button class="green" href="#">reset</button>
-                    </div>
+                    </td>
+                </tr>
+        </table>
+    </form>
 
-                </td>
-            </tr>
-
-
-
-    </table>
+    
 </body>
 
 </html>

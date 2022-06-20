@@ -22,9 +22,9 @@ tr{
      padding: 2px 5px;
 
  }
- table input[type=string]{
+ table textarea{
     width: 95%;
-    height: 100px;
+  
     padding: 2px 5px;
     
  }
